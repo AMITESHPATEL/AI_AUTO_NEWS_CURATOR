@@ -4,3 +4,4 @@ requests
 trafilatura
 pyyaml
 python-dateutil
+python-dotenv

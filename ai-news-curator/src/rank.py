@@ -1,9 +1,12 @@
 import json
 import os
+from dotenv import load_dotenv
 import requests
 from typing import List, Dict, Any
 
 from src.models import Segment, EnrichedLink, RankedStory
+
+load_dotenv() 
 
 def call_ollama(prompt: str, config: Dict[str, Any]) -> str:
     """Calls the Ollama API to get a ranking."""
@@ -30,7 +33,7 @@ def call_ollama(prompt: str, config: Dict[str, Any]) -> str:
 def call_gemini(prompt: str, config: Dict[str, Any]) -> str:
     """Calls the Gemini API to get a ranking."""
     gemini_config = config['gemini']
-    api_key = os.environ.get("GEMINI_API_KEY")
+    api_key = os.getenv("GEMINI_API_KEY")
     
     if not api_key:
         print("GEMINI_API_KEY environment variable not set.")
