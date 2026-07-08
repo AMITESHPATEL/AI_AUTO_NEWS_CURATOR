@@ -1,0 +1,78 @@
+2026-07-08 16:12:08,148 - INFO - Processing single video from URL: https://www.youtube.com/watch?v=UlbokBsjMRY
+2026-07-08 16:12:09,687 - INFO - Processing video: Video UlbokBsjMRY (UlbokBsjMRY)
+2026-07-08 16:12:09,687 - INFO - Fetching full description and transcript...
+2026-07-08 16:12:12,486 - INFO - Found 6 chapters in video metadata.
+2026-07-08 16:12:12,486 - INFO - Building 6 segments...
+2026-07-08 16:12:12,486 - ERROR - An unexpected error occurred while processing UlbokBsjMRY: 'FetchedTranscriptSnippet' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/amiteshpatel/Desktop/ML/AI_News_Auto/ai-news-curator/main.py", line 146, in main
+    success = process_video(video, config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amiteshpatel/Desktop/ML/AI_News_Auto/ai-news-curator/main.py", line 68, in process_video
+    segments = build_segments(timestamps, transcript)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amiteshpatel/Desktop/ML/AI_News_Auto/ai-news-curator/src/segment.py", line 55, in build_segments
+    part_start = part['start']
+                 ~~~~^^^^^^^^^
+TypeError: 'FetchedTranscriptSnippet' object is not subscriptable
+2026-07-08 16:12:12,489 - INFO - Pipeline run complete.
+2026-07-08 16:12:46,967 - INFO - Processing single video from URL: https://www.youtube.com/watch?v=UlbokBsjMRY
+2026-07-08 16:12:48,262 - INFO - Processing video: Video UlbokBsjMRY (UlbokBsjMRY)
+2026-07-08 16:12:48,262 - INFO - Fetching full description and transcript...
+2026-07-08 16:12:50,956 - INFO - Found 6 chapters in video metadata.
+2026-07-08 16:12:50,956 - INFO - Building 6 segments...
+2026-07-08 16:12:50,957 - ERROR - An unexpected error occurred while processing UlbokBsjMRY: 'FetchedTranscriptSnippet' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/amiteshpatel/Desktop/ML/AI_News_Auto/ai-news-curator/main.py", line 146, in main
+    success = process_video(video, config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amiteshpatel/Desktop/ML/AI_News_Auto/ai-news-curator/main.py", line 68, in process_video
+    segments = build_segments(timestamps, transcript)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amiteshpatel/Desktop/ML/AI_News_Auto/ai-news-curator/src/segment.py", line 59, in build_segments
+    part_start = part['start']
+                 ~~~~^^^^^^^^^
+TypeError: 'FetchedTranscriptSnippet' object is not subscriptable
+2026-07-08 16:12:50,958 - INFO - Pipeline run complete.
+2026-07-08 16:13:43,219 - INFO - Processing single video from URL: https://www.youtube.com/watch?v=UlbokBsjMRY
+2026-07-08 16:13:44,765 - INFO - Processing video: Video UlbokBsjMRY (UlbokBsjMRY)
+2026-07-08 16:13:44,765 - INFO - Fetching full description and transcript...
+2026-07-08 16:13:47,206 - INFO - Found 6 chapters in video metadata.
+2026-07-08 16:13:47,206 - INFO - Building 6 segments...
+2026-07-08 16:13:47,206 - INFO - Enriching links found in segments...
+2026-07-08 16:13:47,206 - INFO - Ranking segments...
+2026-07-08 16:13:47,208 - INFO - Writing content package...
+2026-07-08 16:13:47,208 - ERROR - An unexpected error occurred while processing UlbokBsjMRY: Invalid isoformat string: 'N/A'
+Traceback (most recent call last):
+  File "/Users/amiteshpatel/Desktop/ML/AI_News_Auto/ai-news-curator/main.py", line 146, in main
+    success = process_video(video, config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amiteshpatel/Desktop/ML/AI_News_Auto/ai-news-curator/main.py", line 85, in process_video
+    package_path = write_content_package(video, ranked_stories, config['output_dir'])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/amiteshpatel/Desktop/ML/AI_News_Auto/ai-news-curator/src/package.py", line 14, in write_content_package
+    video_date = datetime.datetime.fromisoformat(video.published_at.replace('Z', '+00:00')).strftime('%Y-%m-%d')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid isoformat string: 'N/A'
+2026-07-08 16:13:47,209 - INFO - Pipeline run complete.
+2026-07-08 16:14:05,781 - INFO - Processing single video from URL: https://www.youtube.com/watch?v=UlbokBsjMRY
+2026-07-08 16:14:07,398 - INFO - Processing video: Video UlbokBsjMRY (UlbokBsjMRY)
+2026-07-08 16:14:07,399 - INFO - Fetching full description and transcript...
+2026-07-08 16:14:10,181 - INFO - Found 6 chapters in video metadata.
+2026-07-08 16:14:10,182 - INFO - Building 6 segments...
+2026-07-08 16:14:10,182 - INFO - Enriching links found in segments...
+2026-07-08 16:14:10,182 - INFO - Ranking segments...
+2026-07-08 16:14:10,185 - INFO - Writing content package...
+2026-07-08 16:14:10,186 - INFO - Content package written to /Users/amiteshpatel/Desktop/ML/AI_News_Auto/ai-news-curator/output/2026-07-08_Video UlbokBsjMRY/content_package.md
+2026-07-08 16:14:10,186 - INFO - Pipeline run complete.
+2026-07-08 16:21:59,139 - INFO - Processing single video from URL: https://www.youtube.com/watch?v=qtzzN8w2TvU
+2026-07-08 16:22:00,471 - INFO - Processing video: Video qtzzN8w2TvU (qtzzN8w2TvU)
+2026-07-08 16:22:00,471 - INFO - Fetching full description and transcript...
+2026-07-08 16:22:03,468 - INFO - Found 21 chapters in video metadata.
+2026-07-08 16:22:03,468 - INFO - Building 21 segments...
+2026-07-08 16:22:03,470 - INFO - Enriching links found in segments...
+2026-07-08 16:22:03,470 - INFO - Ranking segments...
+2026-07-08 16:22:03,473 - INFO - Writing content package...
+2026-07-08 16:22:03,474 - INFO - Content package written to /Users/amiteshpatel/Desktop/ML/AI_News_Auto/ai-news-curator/output/2026-07-08_Video qtzzN8w2TvU/content_package.md
+2026-07-08 16:22:03,474 - INFO - Updating state file with 1 new video IDs...
+2026-07-08 16:22:03,474 - INFO - Pipeline run complete.
